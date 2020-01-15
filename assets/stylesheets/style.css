@@ -1,5 +1,13 @@
 /* color and font variables */
 /* Layout, style,size classes and mixins */
+html {
+  height: 100%;
+}
+
+html body {
+  height: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +19,7 @@
   font-weight: bold;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .medium-title {
@@ -34,6 +43,7 @@
   font-size: 14px;
   color: #313131;
   text-decoration: none;
+  margin-bottom: 30px;
 }
 
 .flex {
@@ -73,12 +83,28 @@
   width: 50%;
 }
 
+.h-75 {
+  height: 75%;
+}
+
 .h-50 {
   height: 50%;
 }
 
-.box {
+.h-25 {
+  height: 25%;
+}
+
+.p-30 {
   padding: 30px;
+}
+
+.pr-30 {
+  padding-right: 30px;
+}
+
+.pl-30 {
+  padding-left: 30px;
 }
 
 .justify-content-center {
@@ -110,34 +136,59 @@
           justify-content: flex-start;
 }
 
+.justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.align-items-start {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
+.align-items-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 /* HTML element classes */
+#kanji {
+  font-size: 6px;
+}
+
 .container {
   background-color: blue;
-  height: 90vh;
 }
 
 .aside-menu {
-  width: 20%;
-  background-color: #F5F5f5;
+  width: 15%;
+  background-color: white;
 }
 
 main {
   background-color: #FFF;
-  width: 60%;
+  width: 70%;
 }
 
-.icon {
+.icon-container {
+  padding-top: 20px;
+}
+
+.icon-container span {
   color: #313131;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .menu-icon {
@@ -150,5 +201,21 @@ main {
   text-decoration: none;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.main-small-image {
+  border-left: 4px solid white;
+}
+
+.rounded-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: #FFF 50%;
+}
+
+.rotate {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=style.css.map */
