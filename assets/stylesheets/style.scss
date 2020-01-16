@@ -60,7 +60,7 @@ html {
 }
 
 @mixin border-left {
-    border-left: 4px solid white;
+    border-left: 2px solid white;
 }
 
 .small-title {
@@ -200,7 +200,7 @@ main {
 }
 
 .icon-container {
-    padding-top: 20px;
+    padding: 20px 0 0 10px;
     span {
         @include title;
         @include smallest-font;
@@ -211,7 +211,18 @@ main {
     width: 12px;
     height: 12px;
   }
-  
+
+  #page {
+      @include link;
+      @include small-font;
+  }
+
+  .medium-link {
+      @include link;
+      @include medium-font;
+
+  }
+
   .social-links {
       @include link;
       @include smallest-font;
@@ -274,4 +285,24 @@ main {
 
   .rotate {
     transform: rotate(90deg);
+  }
+
+  header {
+      display: none;
+    @media (min-width: 100px) and (max-width: 1023px)  {
+        background-color: white;
+        display: flex;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        width: 100%;
+        height: 30px;
+        .menu-container {
+            padding: 5px 10px 0 0;
+            .menu-icon {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
   }

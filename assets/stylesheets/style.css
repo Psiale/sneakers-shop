@@ -199,7 +199,7 @@ main {
 }
 
 .icon-container {
-  padding-top: 20px;
+  padding: 20px 0 0 10px;
 }
 
 .icon-container span {
@@ -213,6 +213,20 @@ main {
 .menu-icon {
   width: 12px;
   height: 12px;
+}
+
+#page {
+  color: #313131;
+  text-decoration: none;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 14px;
+}
+
+.medium-link {
+  color: #313131;
+  text-decoration: none;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 18px;
 }
 
 .social-links {
@@ -273,7 +287,7 @@ main {
 }
 
 .main-small-image {
-  border-left: 4px solid white;
+  border-left: 2px solid white;
   background: url(../images/hero-image.jpeg) no-repeat;
   background-size: cover;
   background-position: 82%;
@@ -294,5 +308,30 @@ main {
 .rotate {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+header {
+  display: none;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  header {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 30px;
+  }
+  header .menu-container {
+    padding: 5px 10px 0 0;
+  }
+  header .menu-container .menu-icon {
+    width: 14px;
+    height: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
