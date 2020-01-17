@@ -41,7 +41,7 @@ html body {
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .box-title {
     background-color: #f5f5f5;
     z-index: 1;
@@ -64,7 +64,7 @@ html body {
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .box-title-lightblack {
     background-color: #f5f5f5;
     z-index: 1;
