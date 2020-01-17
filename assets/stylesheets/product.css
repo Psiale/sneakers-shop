@@ -306,7 +306,7 @@ main {
 .shoe-4 {
   border: 2px solid white;
   width: 100%;
-  height: 25%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -500,7 +500,7 @@ header {
 @media (min-width: 100px) and (max-width: 1023px) {
   .main-container .product-images-container .product-image-child {
     width: 100%;
-    height: 100%;
+    height: 25%;
   }
 }
 
