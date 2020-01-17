@@ -199,6 +199,8 @@ main {
 }
 
 .icon-container {
+  color: #313131;
+  text-decoration: none;
   padding: 20px 0 0 10px;
 }
 

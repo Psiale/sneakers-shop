@@ -200,11 +200,13 @@ main {
 }
 
 .icon-container {
+    @include link;
     padding: 20px 0 0 10px;
     span {
         @include title;
         @include smallest-font;
     }
+    
 }
 
 .menu-icon {

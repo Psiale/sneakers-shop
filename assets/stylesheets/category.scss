@@ -49,18 +49,43 @@ html {
 }
 
 @mixin title {
-    color: $color-black;
+    color: black;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 @mixin link {
-    color: $color-black;
+    color: black;
     text-decoration: none;
 }
 
 @mixin border-left {
     border-left: 2px solid white;
+}
+
+.box-title {
+    background-color: $color-almostwhite;
+    @include title;
+    @include small-font;
+
+    @media (min-width: 100px) and (max-width: 1023px)  {
+        background-color: unset;
+    }
+    @media  (max-width: 364px)  {
+        background-color: $color-almostwhite;
+        z-index: 1;
+    }
+}
+
+.box-title-lightblack {
+    @include title;
+    @include small-font;
+    color: $color-black;
+
+    @media  (max-width: 364px)  {
+        background-color: $color-almostwhite;
+        z-index: 1;
+    }
 }
 
 .small-title {
@@ -77,6 +102,7 @@ html {
 .big-title {
     @include title;
     @include biggest-font;
+    padding-left: 10px;
 }
 
 .link-text {
@@ -172,6 +198,12 @@ html {
     align-items: flex-end;
 }
 
+@mixin box-image-position {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* HTML element classes */
 
 #kanji {
@@ -184,6 +216,8 @@ html {
 }
 
 .aside-menu {
+    position: sticky;
+    top: 0;
     width: 15%;
     background-color: white;
     @media (min-width: 100px) and (max-width: 1023px)  {
@@ -192,18 +226,82 @@ html {
 }
 
 main {
-    background-color: $color-white;
+    margin: 0 auto;
+    z-index: 1;
     width: 70%;
     @media (min-width: 100px) and (max-width: 1023px)  {
         width: 100%;
     }
 }
 
+.category-container {
+    height: 20%;
+
+    @media (min-width: 100px) and (max-width: 1023px)  {
+        display: none;
+    }
+}
+
+.catalogue-container {
+    height: 80%;
+    @media (min-width: 100px) and (max-width: 1023px)  {
+        margin-top: 30px;
+        height: 100%;
+    }
+}
+
+.catalogue-child {
+    width: calc(33.33% - 8px);
+    background-color: $color-almostwhite;
+    background-position: 100%;
+    border: $color-white 2px solid;
+
+    @media (min-width: 100px) and (max-width: 1023px)  {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+.cc-1,
+.cc-2,
+.cc-3,
+.cc-4 {
+    @include box-image-position;
+}
+
+.cc-1 {
+    background-image:  url(../images/box-1.jpg);
+}
+
+.cc-2 {
+    background-image: url(../images/box-2.jpg) ;
+}
+
+.cc-3 {
+    background-image:  url(../images/box-3.jpg);
+}
+
+.cc-4 {
+    background-image: url(../images/box-4.jpg);
+    background-size: contain;
+    @media (min-width: 100px) and (max-width: 1023px)  {
+        background-size: cover;
+    }
+    @media (max-width: 463px)  {
+        background-size: contain;
+    }
+}
+
+
 .icon-container {
+    @include link;
     padding: 20px 0 0 10px;
     span {
         @include title;
         @include smallest-font;
+    }
+    @media (min-width: 100px) and (max-width: 1023px)  {
+        padding: 0 0 0 10px;
     }
 }
 
@@ -305,4 +403,30 @@ main {
             }
         }
     }
+  }
+
+  .box-corner-tl {
+    padding: 12% 0 0 12%;
+  }
+
+  .box-corner-bl {
+    padding: 0 0 12% 12%;
+  }
+
+  .box-corner-br {
+    padding: 0 12% 12% 0;
+  }
+
+  #aside-left,
+  #aside-right {
+      position: fixed;
+      top: 0;
+  }
+  
+  #aside-left {
+      left: 0;
+  }
+
+  #aside-right {
+      right: 0;
   }
