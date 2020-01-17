@@ -136,6 +136,10 @@ a {
   height: 100%;
 }
 
+.w-25 {
+  width: 25%;
+}
+
 .w-50 {
   width: 50%;
 }
@@ -283,42 +287,13 @@ main {
   }
 }
 
-.cc-1,
-.cc-2,
-.cc-3,
-.cc-4 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.cc-1 {
-  background-image: url(../images/box-1.jpg);
-}
-
-.cc-2 {
-  background-image: url(../images/box-2.jpg);
-}
-
-.cc-3 {
-  background-image: url(../images/box-3.jpg);
-}
-
-.cc-4 {
-  background-image: url(../images/box-4.jpg);
-  background-size: contain;
-}
-
-@media (min-width: 100px) and (max-width: 1023px) {
-  .cc-4 {
-    background-size: cover;
-  }
-}
-
-@media (max-width: 463px) {
-  .cc-4 {
-    background-size: contain;
-  }
+.shoe-1,
+.shoe-2,
+.shoe-3,
+.shoe-4 {
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
 }
 
 .icon-container {
@@ -490,5 +465,35 @@ header {
 
 #aside-right {
   right: 0;
+}
+
+.product-description-child-1 {
+  width: 35%;
+}
+
+.product-description-child-1 .pd-1 {
+  display: none;
+}
+
+.product-description-child-1 .pd-2 {
+  height: 25%;
+}
+
+.product-description-child-1 .pd-3 {
+  height: 15%;
+}
+
+.product-description-child-1 .pd-4 {
+  height: 45%;
+}
+
+.product-description-child-1 .pd-5 {
+  height: 15%;
+}
+
+.product-description-child-2 {
+  width: 65%;
+  background: url(../images/generic-shoe2.jpg) no-repeat 100%;
+  background-size: cover;
 }
 /*# sourceMappingURL=product.css.map */
