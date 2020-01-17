@@ -45,31 +45,83 @@
     </div>
     </div>
 </aside>
-<main class="flex column h-100">
+<main class=" main-container flex column h-100">
     <div class="w-100 h-25 flex justify-content-between product-images-container" >
         <div class="product-image-child w-25 "><img class="shoe-1" src="../assets/images/generic-shoe1.jpg" alt=""></div>
         <div class="product-image-child w-25 "><img class="shoe-2" src="../assets/images/generic-shoe2.jpg" alt=""></div>
         <div class="product-image-child w-25 "><img class="shoe-3" src="../assets/images/generic-shoe3.jpg" alt=""></div>
         <div class="product-image-child w-25 "><img class="shoe-4" src="../assets/images/generic-shoe4.jpg" alt=""></div>
-
     </div >
-    <div class="w-100 h-75 flex product-description-container" >
-        <div class="flex column justify-content-between product-description-child-1 p-30">
-            <div class="flex  column pd-1">
+    <div id="display-desktop-none" class=" w-100 flex column justify-content-between product-description-child-1">
+        <div class="flex  column pd-1 flex justify-content-end ">
+            <span class="box-title-lightblack product-cost">3880</span>
+            <span class="box-title-lightblack number-image-page">04/05</span>
+        </div>
+        <div class="flex pd column pd-2">
+<!-- I´m currently working on the left side of the main container
+I'm replicating the positioning of the elements. -->
+            <div class="flex w-100 h-100 justify-content-start"><span class="small-title">Tech Runner</span></div>
+            <div class="flex w-100 h-100 justify-content-end "><span class="box-title-lightblack">380 USD</span></div>
+            <div class="flex w-100 h-100 justify-content-start text-counter "><span>Multicolored Leather</span></div>
+        </div>
+        <div class="flex pd pd-3 justify-content-around align-items-center">
+            <span class="text-counter">40</span>
+            <span class="text-counter">41</span>
+            <span class="text-counter">42</span>
+            <span class="text-counter">43</span>
+            <span class="text-counter">44</span>
+            <span class="text-counter">45</span>
+            <span class="text-counter">46</span>
+        </div>
+        <div class="flex pd column pd-4">
+            <div class="details-child">
+                <span class="social-links">Details </span>
             </div>
-            <div class="flex  column pd-2">
+            <div id="padding-lr-text" class="details-child">
+                <span class="text-counter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, eveniet nemo, autem maiores nostrum cupiditate omnis.</span>
+            </div>
+        </div>
+        <div class=" flex w-100  pd-5">
+            <div class=" flex cart-child align-items-center justify-content-center add-cart-child-1">+</div>
+            <div class=" flex cart-child align-items-center justify-content-center add-cart-child-2">Add To Cart</div>
+        </div>
+    </div>
+
+    <div id="display-tablet-none" class="w-100  h-75 flex product-description-container" >
+        <div class=" flex column justify-content-between product-description-child-1">
+            <div class="flex pd column pd-1">
+            </div>
+            <div class="flex pd column pd-2">
 <!-- I´m currently working on the left side of the main container
     I'm replicating the positioning of the elements. -->
-                <div class="flex w-100 h-100 justify-content-start"><span>Hello</span></div>
-                <div class="flex w-100 h-100 justify-content-end "><span>Hello</span></div>
-                <div class="flex w-100 h-100 justify-content-start "><span>Hello</span></div>
+                <div class="flex w-100 h-100 justify-content-start"><span class="small-title">Tech Runner</span></div>
+                <div class="flex w-100 h-100 justify-content-end "><span class="box-title-lightblack">380 USD</span></div>
+                <div class="flex w-100 h-100 justify-content-start text-counter "><span>Multicolored Leather</span></div>
             </div>
-            <div class="flex  column pd-3">Hello</div>
-            <div class="flex  column pd-4">Hello</div>
-            <div class="flex  column pd-5">Hello</div>
+            <div class="flex pd pd-3 justify-content-around align-items-center">
+                <span class="text-counter">40</span>
+                <span class="text-counter">41</span>
+                <span class="text-counter">42</span>
+                <span class="text-counter">43</span>
+                <span class="text-counter">44</span>
+                <span class="text-counter">45</span>
+                <span class="text-counter">46</span>
+            </div>
+            <div class="flex pd column pd-4">
+                <div class="details-child">
+                    <span class="social-links">Details </span>
+                </div>
+                <div id="padding-lr-text" class="details-child">
+                    <span class="text-counter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, eveniet nemo, autem maiores nostrum cupiditate omnis.</span>
+                </div>
+            </div>
+            <div class=" flex w-100  pd-5">
+                <div class=" flex cart-child align-items-center justify-content-center add-cart-child-1">+</div>
+                <div class=" flex cart-child align-items-center justify-content-center add-cart-child-2">Add To Cart</div>
+            </div>
         </div>
         <div class="product-description-child-2 flex justify-content-end p-30"><span class="box-title-lightblack">3880</span></div>
-    </div >
+    </div>
 </main>
 <aside id="aside-right" class="flex justify-content-between h-100 column aside-menu">
     <div class="w-100 h-25 justify-content-around flex column align-items-end">
