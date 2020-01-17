@@ -75,6 +75,11 @@ html {
         background-color: $color-almostwhite;
         z-index: 1;
     }
+    
+    @media (min-width: 1023px) {
+            background-color: #f5f5f5;
+    z-index: 1;
+    }
 }
 
 .box-title-lightblack {
@@ -84,6 +89,11 @@ html {
 
     @media  (max-width: 364px)  {
         background-color: $color-almostwhite;
+        z-index: 1;
+    }
+
+    @media (min-width: 1023px) {
+        background-color: #f5f5f5;
         z-index: 1;
     }
 }

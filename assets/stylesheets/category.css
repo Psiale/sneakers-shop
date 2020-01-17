@@ -41,6 +41,13 @@ html body {
   }
 }
 
+@media (min-width: 1023px) {
+  .box-title {
+    background-color: #f5f5f5;
+    z-index: 1;
+  }
+}
+
 .box-title-lightblack {
   color: black;
   text-transform: uppercase;
@@ -53,6 +60,13 @@ html body {
 @media (max-width: 364px) {
   .box-title-lightblack {
     background-color: #F5F5f5;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1023px) {
+  .box-title-lightblack {
+    background-color: #f5f5f5;
     z-index: 1;
   }
 }
