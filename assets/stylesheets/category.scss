@@ -97,17 +97,6 @@ a { text-decoration: none;}
     }
 }
 
-.small-title {
-    @include title;
-    @include medium-font;
-    line-height: 30px;
-}
-
-.medium-title {
-    @include title;
-    @include big-font;
-}
-
 .big-title {
     @include title;
     @include biggest-font;
@@ -158,10 +147,6 @@ a { text-decoration: none;}
 
 .h-25 {
     height: 25%;
-}
-
-.p-30 {
-    padding: 30px;
 }
 
 .padding-aside {
@@ -329,54 +314,6 @@ main {
       @include link;
       @include smallest-font;
       margin-bottom: 10px;
-  }
-
-.m-child-1 {
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        width: 100%;
-    }
-    @media (max-width: 767px) {
-        height: 70%;
-    }
-}
-
-.m-child-2 {
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        width: 50%;
-      height: 40%;
-      background-color: white;  
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-    @media (max-width: 767px) {
-        height: 30%;
-        width: 100%;
-    }
-    div { @media (min-width: 100px) and (max-width: 1023px)  {
-        height: 100%;
-    }
-     }
-}
-
-  .main-image {
-      background: url(../images/hero-image.jpg) no-repeat;
-      background-size: cover;
-      background-position: 69%;
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        width: 100%;
-        height: 100%;
-    }
-  }
-
-  .main-small-image {
-      @include border-left;
-      background: url(../images/hero-image.jpeg) no-repeat;
-      background-size: cover;
-      background-position: 82%;
-      @media (min-width: 100px) and (max-width: 1023px)  {
-        display: none;
-    }
   }
 
   .rounded-icon {

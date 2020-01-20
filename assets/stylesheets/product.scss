@@ -267,34 +267,6 @@ main {
     }
 }
 
-.category-container {
-    height: 20%;
-
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        display: none;
-    }
-}
-
-.catalogue-container {
-    height: 80%;
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        margin-top: 30px;
-        height: 100%;
-    }
-}
-
-.catalogue-child {
-    width: calc(33.33% - 8px);
-    background-color: $color-almostwhite;
-    background-position: 100%;
-    border: $color-white 2px solid;
-
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        width: 100%;
-        height: 50%;
-    }
-}
-
 .shoe-1,
 .shoe-2,
 .shoe-3,
@@ -327,64 +299,10 @@ main {
       @include small-font;
   }
 
-  .medium-link {
-      @include link;
-      @include medium-font;
-
-  }
-
   .social-links {
       @include link;
       @include smallest-font;
       margin-bottom: 10px;
-  }
-
-.m-child-1 {
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        width: 100%;
-    }
-    @media (max-width: 767px) {
-        height: 70%;
-    }
-}
-
-.m-child-2 {
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        width: 50%;
-      height: 40%;
-      background-color: white;  
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-    @media (max-width: 767px) {
-        height: 30%;
-        width: 100%;
-    }
-    div { @media (min-width: 100px) and (max-width: 1023px)  {
-        height: 100%;
-    }
-     }
-}
-
-  .main-image {
-      background: url(../images/hero-image.jpg) no-repeat;
-      background-size: cover;
-      background-position: 69%;
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        width: 100%;
-        height: 100%;
-    }
-  }
-
-  .main-small-image {
-      @include border-left;
-      background: url(../images/hero-image.jpeg) no-repeat;
-      background-size: cover;
-      background-position: 82%;
-      @media (min-width: 100px) and (max-width: 1023px)  {
-        display: none;
-    }
   }
 
   .rounded-icon {
@@ -416,19 +334,6 @@ main {
         }
     }
   }
-
-  .box-corner-tl {
-    padding: 12% 0 0 12%;
-  }
-
-  .box-corner-bl {
-    padding: 0 0 12% 12%;
-  }
-
-  .box-corner-br {
-    padding: 0 12% 12% 0;
-  }
-
   #aside-left,
   #aside-right {
       position: fixed;
