@@ -7,6 +7,7 @@ module.exports = {
     "**/.scss"
   ],
   "rules": {
+    ignoreAtRules: ['function', 'if'],
     "at-rule-empty-line-before": [ "always", {
       except: [
         "blockless-after-same-name-blockless",
