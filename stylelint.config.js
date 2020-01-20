@@ -3,7 +3,7 @@
 module.exports = {
   "extends": "stylelint-config-recommended",
   "ignore-files": [
-    "*.scss",
+    "!*.scss",
     "**/.scss"
   ],
   "rules": {
