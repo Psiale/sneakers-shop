@@ -1,486 +1,513 @@
 /* color and font variables */
 
 $color-black: #313131;
-$color-almostwhite: #F5F5f5;
-$color-white: #FFF;
-$color-gray: #B9B9B9;
+$color-almostwhite: #f5f5f5;
+$color-white: #fff;
+$color-gray: #b9b9b9;
 $font: 'IBM Plex Sans Condensed', sans-serif;
 
 /* Layout, style,size classes and mixins */
 
 html {
+  height: 100%;
+
+  body {
     height: 100%;
-    body {
-        height: 100%;
-    }
+  }
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-a { text-decoration: none;}
+a { text-decoration: none; }
 
 @mixin smallest-font {
-    font-family: $font;
-    font-size: 12px;    
+  font-family: $font;
+  font-size: 12px;
 }
 
 @mixin small-font {
-    font-family: $font;
-    font-size: 14px;
+  font-family: $font;
+  font-size: 14px;
 }
 
 @mixin medium-font {
-    font-family: $font;
-    font-size: 18px;
+  font-family: $font;
+  font-size: 18px;
 }
 
 @mixin big-font {
-    font-family: $font;
-    font-size: 24px;
+  font-family: $font;
+  font-size: 24px;
 }
 
 @mixin biggest-font {
-    font-family: $font;
-    font-size: 40px;
+  font-family: $font;
+  font-size: 40px;
 }
 
 @mixin title {
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 @mixin link {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 @mixin border-left {
-    border-left: 2px solid white;
+  border-left: 2px solid white;
 }
 
 .box-title {
-    background-color: $color-almostwhite;
-    @include title;
-    @include small-font;
+  background-color: $color-almostwhite;
 
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        background-color: unset;
-    }
-    @media  (max-width: 364px)  {
-        background-color: $color-almostwhite;
-        z-index: 1;
-    }
-    
-    @media (min-width: 1024px) {
-            background-color: #f5f5f5;
+  @include title;
+  @include small-font;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    background-color: unset;
+  }
+
+  @media (max-width: 364px) {
+    background-color: $color-almostwhite;
     z-index: 1;
-    }
+  }
+
+  @media (min-width: 1024px) {
+    background-color: #f5f5f5;
+    z-index: 1;
+  }
 }
 
 .box-title-lightblack {
-    @include title;
-    @include small-font;
-    color: $color-black;
+  @include title;
+  @include small-font;
 
-    @media  (max-width: 364px)  {
-        // background-color: $color-almostwhite;
-        // z-index: 1;
-    }
+  color: $color-black;
 
-    @media (min-width: 1024px) {
-        // background-color: #f5f5f5;
-        // z-index: 1;
-    }
+  @media (max-width: 364px) {
+    // background-color: $color-almostwhite;
+    // z-index: 1;
+  }
+
+  @media (min-width: 1024px) {
+    // background-color: #f5f5f5;
+    // z-index: 1;
+  }
 }
 
-
 .small-title {
-    @include title;
-    @include small-font;
-    line-height: 30px;
+  @include title;
+  @include small-font;
+
+  line-height: 30px;
 }
 
 .medium-title {
-    @include title;
-    @include big-font;
+  @include title;
+  @include big-font;
 }
 
 .big-title {
-    @include title;
-    @include biggest-font;
-    padding-left: 10px;
+  @include title;
+  @include biggest-font;
+
+  padding-left: 10px;
 }
 
 #display-tablet-none {
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        display: none;
-    }
+  @media (min-width: 100px) and (max-width: 1023px) {
+    display: none;
+  }
 }
 
 #display-desktop-none {
-    @media (min-width:1024px) {
-        display: none;
-    }
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .padding-none {
-    padding: 0;
+  padding: 0;
 }
 
 .link-text {
-    @include medium-font;
-    @include link;
-    margin-bottom: 30px;
+  @include medium-font;
+  @include link;
+
+  margin-bottom: 30px;
 }
 
 .text-counter {
-    @include smallest-font;
-     color: $color-gray;
+  @include smallest-font;
+
+  color: $color-gray;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .w-fit {
-    width: fit-content;
+  width: fit-content;
 }
 
 .w-100 {
-    width: 100%;
+  width: 100%;
 }
 
 .h-100 {
-    height: 100%;
+  height: 100%;
 }
 
 .w-25 {
-    width: 25%;
+  width: 25%;
 }
 
 .w-50 {
-    width: 50%;
+  width: 50%;
 }
 
 .h-75 {
-    height: 75%;
+  height: 75%;
 }
 
 .h-50 {
-    height: 50%;
+  height: 50%;
 }
 
 .h-25 {
-    height: 25%;
+  height: 25%;
 }
 
 .p-30 {
-    padding: 30px;
+  padding: 30px;
 }
 
 .padding-aside {
-    padding-right: 18%;
+  padding-right: 18%;
 }
 
 .pl-30 {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .justify-content-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .justify-content-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-content-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .justify-content-evenly {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .justify-content-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .justify-content-end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .align-items-center {
-    align-items: center;
+  align-items: center;
 }
+
 .align-items-start {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .align-items-end {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 @mixin box-image-position {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
 }
 
 /* HTML element classes */
 
 #kanji {
-    font-size: 6px;
+  font-size: 6px;
 }
 
 .aside-menu {
-    position: sticky;
-    top: 0;
-    width: calc(15% - 16px);
-    background-color: white;
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        display: none;
-    }
+  position: sticky;
+  top: 0;
+  width: calc(15% - 16px);
+  background-color: white;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    display: none;
+  }
 }
 
 main {
-    margin: 0 auto;
-    width: calc(70% - 60px);
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        width: 100%;
-    }
+  margin: 0 auto;
+  width: calc(70% - 60px);
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    width: 100%;
+  }
 }
 
 .shoe-1,
 .shoe-2,
 .shoe-3,
 .shoe-4 {
-    border: 2px solid white;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .icon-container {
-    @include link;
-    padding: 20px 0 0 10px;
-    span {
-        @include title;
-        @include smallest-font;
-    }
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        padding: 0 0 0 10px;
-    }
+  @include link;
+
+  padding: 20px 0 0 10px;
+
+  span {
+    @include title;
+    @include smallest-font;
+  }
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    padding: 0 0 0 10px;
+  }
 }
 
 .menu-icon {
-    width: 12px;
-    height: 12px;
-  }
+  width: 12px;
+  height: 12px;
+}
 
-  #page {
-      @include link;
-      @include small-font;
-  }
+#page {
+  @include link;
+  @include small-font;
+}
 
-  .social-links {
-      @include link;
-      @include smallest-font;
-      margin-bottom: 10px;
-  }
+.social-links {
+  @include link;
+  @include smallest-font;
 
-  .rounded-icon {
-      width: 14px;
-      height: 14px;
-      border-radius: $color-white 50%;
-  }
+  margin-bottom: 10px;
+}
 
-  .rotate {
-    transform: rotate(90deg);
-  }
+.rounded-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: $color-white 50%;
+}
 
-  header {
-      display: none;
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        background-color: white;
-        display: flex;
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        width: 100%;
-        height: 30px;
-        .menu-container {
-            padding: 5px 10px 0 0;
-            .menu-icon {
-                width: 14px;
-                height: 14px;
-            }
-        }
+.rotate {
+  transform: rotate(90deg);
+}
+
+header {
+  display: none;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 30px;
+
+    .menu-container {
+      padding: 5px 10px 0 0;
+
+      .menu-icon {
+        width: 14px;
+        height: 14px;
+      }
     }
   }
-  #aside-left,
-  #aside-right {
-      position: fixed;
-      top: 0;
-  }
+}
 
-  .main-container {
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        margin-top: 32px;
-        width: 100%;
-        height: 100%;
-        flex-direction: row;
-         }
-        .product-images-container {
-            @media (min-width: 100px) and (max-width: 1023px)  {
-            width: 25%;
-            height: 100%;
-            flex-direction: column;
-        }
-            .product-image-child {
-                @media (min-width: 100px) and (max-width: 1023px)  {
-                width: 100%;
-                height: 25%;
-                }
-            }
-        }
+#aside-left,
+#aside-right {
+  position: fixed;
+  top: 0;
+}
 
-        .product-description-child-1 { 
-            @media (min-width: 100px) and (max-width: 1023px)  {
-            width: 75%;
-            height: 100%;
-            }
-            .pd-1 {
-                @media (min-width: 100px) and (max-width: 1023px)  { 
-                display: initial;
-                position: relative;
-                width: 100%;
-                height: 45%;
-
-                .product-cost {
-                 position: absolute;
-                 top: 10px;
-                 right: 15px;   
-                }
-
-                .number-image-page {
-                    position: absolute;
-                    bottom: 10px;
-                    left: 50%;
-                }
-                }
-              }
-            .pd-2 {
-                @media (min-width: 100px) and (max-width: 1023px)  {
-                height: 15%;
-                }
-              }
-            .pd-3 {
-                @media (min-width: 100px) and (max-width: 1023px)  {
-                height: 10%;
-                }
-              }
-            .pd-4 {
-                @media (min-width: 100px) and (max-width: 1023px)  {
-                height: 20%;
-                }
-            }
-            .pd-5 {
-                @media (min-width: 100px) and (max-width: 1023px)  {
-                height: 10%;
-                }
-              }
-        }
-    }
-  
-  #aside-left {
-      left: 0;
-  }
-
-  #aside-right {
-      right: 0;
+.main-container {
+  @media (min-width: 100px) and (max-width: 1023px) {
+    margin-top: 32px;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
   }
 
   .product-images-container {
-      height: 33%;
+    @media (min-width: 100px) and (max-width: 1023px) {
+      width: 25%;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    .product-image-child {
+      @media (min-width: 100px) and (max-width: 1023px) {
+        width: 100%;
+        height: 25%;
+      }
+    }
   }
 
   .product-description-child-1 {
-      background-color: $color-almostwhite;
-      width: 35%;
-      
-    .pd,
-    .cart-child {
-        border: $color-white 2px solid;
+    @media (min-width: 100px) and (max-width: 1023px) {
+      width: 75%;
+      height: 100%;
     }
 
-    .pd {
-        @media (min-width: 100px) and (max-width: 1023px)  {
-            padding: 0;
+    .pd-1 {
+      @media (min-width: 100px) and (max-width: 1023px) {
+        display: initial;
+        position: relative;
+        width: 100%;
+        height: 45%;
+
+        .product-cost {
+          position: absolute;
+          top: 10px;
+          right: 15px;
         }
+
+        .number-image-page {
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+        }
+      }
     }
 
-    .add-cart-child-1 {
-        width: 10%;
+    .pd-2 {
+      @media (min-width: 100px) and (max-width: 1023px) {
+        height: 15%;
+      }
     }
 
-    .add-cart-child-2 {
-        width: 90%;
+    .pd-3 {
+      @media (min-width: 100px) and (max-width: 1023px) {
+        height: 10%;
+      }
     }
 
-    .pd,
-    .details-child
-     {
-        padding: 10px;
+    .pd-4 {
+      @media (min-width: 100px) and (max-width: 1023px) {
+        height: 20%;
+      }
     }
 
-    #padding-lr-text {
-        padding: 0 10px
+    .pd-5 {
+      @media (min-width: 100px) and (max-width: 1023px) {
+        height: 10%;
+      }
     }
+  }
+}
 
-      .pd-1 {
-          display: none;
-        }
-      .pd-2 {
-          height: 25%;
-        }
-      .pd-3 {
-          height: 10%;
-        }
-      .pd-4 {
-          height: 50%;
-        }
-      .pd-5 {
-          height: 10%;
-        }
+#aside-left {
+  left: 0;
+}
+
+#aside-right {
+  right: 0;
+}
+
+.product-images-container {
+  height: 33%;
+}
+
+.product-description-child-1 {
+  background-color: $color-almostwhite;
+  width: 35%;
+
+  .pd,
+  .cart-child {
+    border: $color-white 2px solid;
   }
 
-  .product-description-child-2,
+  .pd {
+    @media (min-width: 100px) and (max-width: 1023px) {
+      padding: 0;
+    }
+  }
+
+  .add-cart-child-1 {
+    width: 10%;
+  }
+
+  .add-cart-child-2 {
+    width: 90%;
+  }
+
+  .pd,
+  .details-child {
+    padding: 10px;
+  }
+
+  #padding-lr-text {
+    padding: 0 10px;
+  }
+
   .pd-1 {
-    width: 65%;
-    background: url(../images/generic-shoe2.jpg) no-repeat 100%;
-    background-size: cover;
-    
+    display: none;
   }
 
-  .product-description-child-2 {
-      @media (min-width: 100px) and (max-width: 1023px)  {
-        display: none;
-    }
+  .pd-2 {
+    height: 25%;
   }
+
+  .pd-3 {
+    height: 10%;
+  }
+
+  .pd-4 {
+    height: 50%;
+  }
+
+  .pd-5 {
+    height: 10%;
+  }
+}
+
+.product-description-child-2,
+.pd-1 {
+  width: 65%;
+  background: url(../images/generic-shoe2.jpg) no-repeat 100%;
+  background-size: cover;
+}
+
+.product-description-child-2 {
+  @media (min-width: 100px) and (max-width: 1023px) {
+    display: none;
+  }
+}

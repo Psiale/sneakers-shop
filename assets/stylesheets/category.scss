@@ -1,373 +1,390 @@
 /* color and font variables */
 
 $color-black: #313131;
-$color-almostwhite: #F5F5f5;
-$color-white: #FFF;
-$color-gray: #B9B9B9;
+$color-almostwhite: #f5f5f5;
+$color-white: #fff;
+$color-gray: #b9b9b9;
 $font: 'IBM Plex Sans Condensed', sans-serif;
 
 /* Layout, style,size classes and mixins */
 
 html {
+  height: 100%;
+
+  body {
     height: 100%;
-    body {
-        height: 100%;
-    }
+  }
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-a { text-decoration: none;}
+a { text-decoration: none; }
 
 @mixin smallest-font {
-    font-family: $font;
-    font-size: 12px;    
+  font-family: $font;
+  font-size: 12px;
 }
 
 @mixin small-font {
-    font-family: $font;
-    font-size: 14px;
+  font-family: $font;
+  font-size: 14px;
 }
 
 @mixin medium-font {
-    font-family: $font;
-    font-size: 18px;
+  font-family: $font;
+  font-size: 18px;
 }
 
 @mixin big-font {
-    font-family: $font;
-    font-size: 24px;
+  font-family: $font;
+  font-size: 24px;
 }
 
 @mixin biggest-font {
-    font-family: $font;
-    font-size: 40px;
+  font-family: $font;
+  font-size: 40px;
 }
 
 @mixin title {
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 @mixin link {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 @mixin border-left {
-    border-left: 2px solid white;
+  border-left: 2px solid white;
 }
 
 .box-title {
-    background-color: $color-almostwhite;
-    @include title;
-    @include small-font;
+  background-color: $color-almostwhite;
 
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        background-color: unset;
-    }
-    @media  (max-width: 364px)  {
-        background-color: $color-almostwhite;
-        z-index: 1;
-    }
-    
-    @media (min-width: 1024px) {
-            background-color: #f5f5f5;
+  @include title;
+  @include small-font;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    background-color: unset;
+  }
+
+  @media (max-width: 364px) {
+    background-color: $color-almostwhite;
     z-index: 1;
-    }
+  }
+
+  @media (min-width: 1024px) {
+    background-color: #f5f5f5;
+    z-index: 1;
+  }
 }
 
 .box-title-lightblack {
-    @include title;
-    @include small-font;
-    color: $color-black;
+  @include title;
+  @include small-font;
 
-    @media  (max-width: 364px)  {
-        background-color: $color-almostwhite;
-        z-index: 1;
-    }
+  color: $color-black;
 
-    @media (min-width: 1024px) {
-        background-color: #f5f5f5;
-        z-index: 1;
-    }
+  @media (max-width: 364px) {
+    background-color: $color-almostwhite;
+    z-index: 1;
+  }
+
+  @media (min-width: 1024px) {
+    background-color: #f5f5f5;
+    z-index: 1;
+  }
 }
 
 .big-title {
-    @include title;
-    @include biggest-font;
-    padding-left: 10px;
+  @include title;
+  @include biggest-font;
+
+  padding-left: 10px;
 }
 
 .link-text {
-    @include medium-font;
-    @include link;
-    margin-bottom: 30px;
+  @include medium-font;
+  @include link;
+
+  margin-bottom: 30px;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .w-100 {
-    width: 100%;
+  width: 100%;
 }
 
 .h-100 {
-    height: 100%;
+  height: 100%;
 }
 
 .w-50 {
-    width: 50%;
+  width: 50%;
 }
 
 .h-75 {
-    height: 75%;
+  height: 75%;
 }
 
 .h-50 {
-    height: 50%;
+  height: 50%;
 }
 
 .h-25 {
-    height: 25%;
+  height: 25%;
 }
 
 .padding-aside {
-    padding-right: 18%;
+  padding-right: 18%;
 }
 
 .pl-30 {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .justify-content-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .justify-content-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-content-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .justify-content-evenly {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .justify-content-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .justify-content-end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .align-items-center {
-    align-items: center;
+  align-items: center;
 }
+
 .align-items-start {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .align-items-end {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 @mixin box-image-position {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* HTML element classes */
 
 #kanji {
-    font-size: 6px;
+  font-size: 6px;
 }
 
 .aside-menu {
-    position: sticky;
-    top: 0;
-    width: 15%;
-    background-color: white;
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        display: none;
-    }
+  position: sticky;
+  top: 0;
+  width: 15%;
+  background-color: white;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    display: none;
+  }
 }
 
 main {
-    margin: 0 auto;
-    z-index: 1;
-    width: 70%;
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        width: 100%;
-    }
+  margin: 0 auto;
+  z-index: 1;
+  width: 70%;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    width: 100%;
+  }
 }
 
 .category-container {
-    height: 20%;
+  height: 20%;
 
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        display: none;
-    }
+  @media (min-width: 100px) and (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .catalogue-container {
-    height: 80%;
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        margin-top: 30px;
-        height: 100%;
-    }
+  height: 80%;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    margin-top: 30px;
+    height: 100%;
+  }
 }
 
 .catalogue-child {
-    width: calc(33.33% - 8px);
-    background-color: $color-almostwhite;
-    background-position: 100%;
-    border: $color-white 2px solid;
+  width: calc(33.33% - 8px);
+  background-color: $color-almostwhite;
+  background-position: 100%;
+  border: $color-white 2px solid;
 
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        width: 100%;
-        height: 50%;
-    }
+  @media (min-width: 100px) and (max-width: 1023px) {
+    width: 100%;
+    height: 50%;
+  }
 }
 
 .cc-1,
 .cc-2,
 .cc-3,
 .cc-4 {
-    @include box-image-position;
+  @include box-image-position;
 }
 
 .cc-1 {
-    background-image:  url(../images/box-1.jpg);
+  background-image: url(../images/box-1.jpg);
 }
 
 .cc-2 {
-    background-image: url(../images/box-2.jpg) ;
+  background-image: url(../images/box-2.jpg);
 }
 
 .cc-3 {
-    background-image:  url(../images/box-3.jpg);
+  background-image: url(../images/box-3.jpg);
 }
 
 .cc-4 {
-    background-image: url(../images/box-4.jpg);
+  background-image: url(../images/box-4.jpg);
+  background-size: contain;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    background-size: cover;
+  }
+
+  @media (max-width: 463px) {
     background-size: contain;
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        background-size: cover;
-    }
-    @media (max-width: 463px)  {
-        background-size: contain;
-    }
+  }
 }
 
-
 .icon-container {
-    @include link;
-    padding: 20px 0 0 10px;
-    span {
-        @include title;
-        @include smallest-font;
-    }
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        padding: 0 0 0 10px;
-    }
+  @include link;
+
+  padding: 20px 0 0 10px;
+
+  span {
+    @include title;
+    @include smallest-font;
+  }
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    padding: 0 0 0 10px;
+  }
 }
 
 .menu-icon {
-    width: 12px;
-    height: 12px;
-  }
+  width: 12px;
+  height: 12px;
+}
 
-  #page {
-      @include link;
-      @include small-font;
-  }
+#page {
+  @include link;
+  @include small-font;
+}
 
-  .medium-link {
-      @include link;
-      @include medium-font;
+.medium-link {
+  @include link;
+  @include medium-font;
+}
 
-  }
+.social-links {
+  @include link;
+  @include smallest-font;
 
-  .social-links {
-      @include link;
-      @include smallest-font;
-      margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
+}
 
-  .rounded-icon {
-      width: 14px;
-      height: 14px;
-      border-radius: $color-white 50%;
-  }
+.rounded-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: $color-white 50%;
+}
 
-  .rotate {
-    transform: rotate(90deg);
-  }
+.rotate {
+  transform: rotate(90deg);
+}
 
-  header {
-      display: none;
-    @media (min-width: 100px) and (max-width: 1023px)  {
-        background-color: white;
-        display: flex;
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        width: 100%;
-        height: 30px;
-        .menu-container {
-            padding: 5px 10px 0 0;
-            .menu-icon {
-                width: 14px;
-                height: 14px;
-            }
-        }
+header {
+  display: none;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 30px;
+
+    .menu-container {
+      padding: 5px 10px 0 0;
+
+      .menu-icon {
+        width: 14px;
+        height: 14px;
+      }
     }
   }
+}
 
-  .box-corner-tl {
-    padding: 12% 0 0 12%;
-  }
+.box-corner-tl {
+  padding: 12% 0 0 12%;
+}
 
-  .box-corner-bl {
-    padding: 0 0 12% 12%;
-  }
+.box-corner-bl {
+  padding: 0 0 12% 12%;
+}
 
-  .box-corner-br {
-    padding: 0 12% 12% 0;
-  }
+.box-corner-br {
+  padding: 0 12% 12% 0;
+}
 
-  #aside-left,
-  #aside-right {
-      position: fixed;
-      top: 0;
-  }
-  
-  #aside-left {
-      left: 0;
-  }
+#aside-left,
+#aside-right {
+  position: fixed;
+  top: 0;
+}
 
-  #aside-right {
-      right: 0;
-  }
+#aside-left {
+  left: 0;
+}
+
+#aside-right {
+  right: 0;
+}

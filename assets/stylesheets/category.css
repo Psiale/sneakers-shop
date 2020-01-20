@@ -18,7 +18,7 @@ a {
 }
 
 .box-title {
-  background-color: #F5F5f5;
+  background-color: #f5f5f5;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
@@ -34,7 +34,7 @@ a {
 
 @media (max-width: 364px) {
   .box-title {
-    background-color: #F5F5f5;
+    background-color: #f5f5f5;
     z-index: 1;
   }
 }
@@ -57,7 +57,7 @@ a {
 
 @media (max-width: 364px) {
   .box-title-lightblack {
-    background-color: #F5F5f5;
+    background-color: #f5f5f5;
     z-index: 1;
   }
 }
@@ -250,9 +250,9 @@ main {
 
 .catalogue-child {
   width: calc(33.33% - 8px);
-  background-color: #F5F5f5;
+  background-color: #f5f5f5;
   background-position: 100%;
-  border: #FFF 2px solid;
+  border: #fff 2px solid;
 }
 
 @media (min-width: 100px) and (max-width: 1023px) {
@@ -350,7 +350,7 @@ main {
 .rounded-icon {
   width: 14px;
   height: 14px;
-  border-radius: #FFF 50%;
+  border-radius: #fff 50%;
 }
 
 .rotate {
