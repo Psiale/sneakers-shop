@@ -61,11 +61,7 @@ a { text-decoration: none; }
 }
 
 @mixin border-left {
-<<<<<<< HEAD
-  border-left: 2px solid white;
-=======
   border-left: $border-values;
->>>>>>> stickler
 }
 
 .box-title {
@@ -94,17 +90,6 @@ a { text-decoration: none; }
   @include small-font;
 
   color: $color-black;
-<<<<<<< HEAD
-
-  @media (max-width: 364px) {
-    // background-color: $color-almostwhite;
-    // z-index: 1;
-  }
-
-  @media (min-width: 1024px) {
-    // background-color: #f5f5f5;
-    // z-index: 1;
-  }
 }
 
 .small-title {
@@ -112,27 +97,6 @@ a { text-decoration: none; }
   @include small-font;
 
   line-height: 30px;
-}
-
-.medium-title {
-  @include title;
-  @include big-font;
-}
-
-.big-title {
-  @include title;
-  @include biggest-font;
-
-  padding-left: 10px;
-=======
-}
-
-.small-title {
-  @include title;
-  @include small-font;
-
-  line-height: 30px;
->>>>>>> stickler
 }
 
 #display-tablet-none {
@@ -145,13 +109,6 @@ a { text-decoration: none; }
   @media (min-width: 1024px) {
     display: none;
   }
-<<<<<<< HEAD
-}
-
-.padding-none {
-  padding: 0;
-=======
->>>>>>> stickler
 }
 
 .link-text {
@@ -163,40 +120,16 @@ a { text-decoration: none; }
 
 .text-counter {
   @include smallest-font;
-<<<<<<< HEAD
 
   color: $color-gray;
 }
 
 .flex {
   display: flex;
-}
-
-.row {
-  flex-direction: row;
-=======
-
-  color: $color-gray;
-}
-
-.flex {
-  display: flex;
->>>>>>> stickler
 }
 
 .column {
   flex-direction: column;
-<<<<<<< HEAD
-}
-
-.wrap {
-  flex-wrap: wrap;
-}
-
-.w-fit {
-  width: fit-content;
-=======
->>>>>>> stickler
 }
 
 .w-100 {
@@ -273,15 +206,6 @@ a { text-decoration: none; }
 
 .align-items-end {
   align-items: flex-end;
-<<<<<<< HEAD
-}
-
-@mixin box-image-position {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100%;
-=======
->>>>>>> stickler
 }
 
 /* HTML element classes */
@@ -295,175 +219,6 @@ a { text-decoration: none; }
   top: 0;
   width: calc(15% - 16px);
   background-color: white;
-<<<<<<< HEAD
-
-  @media (min-width: 100px) and (max-width: 1023px) {
-    display: none;
-  }
-}
-
-main {
-  margin: 0 auto;
-  width: calc(70% - 60px);
-
-  @media (min-width: 100px) and (max-width: 1023px) {
-    width: 100%;
-  }
-}
-
-.shoe-1,
-.shoe-2,
-.shoe-3,
-.shoe-4 {
-  border: 2px solid white;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.icon-container {
-  @include link;
-
-  padding: 20px 0 0 10px;
-
-  span {
-    @include title;
-    @include smallest-font;
-  }
-
-  @media (min-width: 100px) and (max-width: 1023px) {
-    padding: 0 0 0 10px;
-  }
-}
-
-.menu-icon {
-  width: 12px;
-  height: 12px;
-}
-
-#page {
-  @include link;
-  @include small-font;
-}
-
-.social-links {
-  @include link;
-  @include smallest-font;
-
-  margin-bottom: 10px;
-}
-
-.rounded-icon {
-  width: 14px;
-  height: 14px;
-  border-radius: $color-white 50%;
-}
-
-.rotate {
-  transform: rotate(90deg);
-}
-
-header {
-  display: none;
-
-  @media (min-width: 100px) and (max-width: 1023px) {
-    background-color: white;
-    display: flex;
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    width: 100%;
-    height: 30px;
-
-    .menu-container {
-      padding: 5px 10px 0 0;
-
-      .menu-icon {
-        width: 14px;
-        height: 14px;
-      }
-    }
-  }
-}
-
-#aside-left,
-#aside-right {
-  position: fixed;
-  top: 0;
-}
-
-.main-container {
-  @media (min-width: 100px) and (max-width: 1023px) {
-    margin-top: 32px;
-    width: 100%;
-    height: 100%;
-    flex-direction: row;
-  }
-
-  .product-images-container {
-    @media (min-width: 100px) and (max-width: 1023px) {
-      width: 25%;
-      height: 100%;
-      flex-direction: column;
-    }
-
-    .product-image-child {
-      @media (min-width: 100px) and (max-width: 1023px) {
-        width: 100%;
-        height: 25%;
-      }
-    }
-  }
-
-  .product-description-child-1 {
-    @media (min-width: 100px) and (max-width: 1023px) {
-      width: 75%;
-      height: 100%;
-    }
-
-    .pd-1 {
-      @media (min-width: 100px) and (max-width: 1023px) {
-        display: initial;
-        position: relative;
-        width: 100%;
-        height: 45%;
-
-        .product-cost {
-          position: absolute;
-          top: 10px;
-          right: 15px;
-        }
-
-        .number-image-page {
-          position: absolute;
-          bottom: 10px;
-          left: 50%;
-        }
-      }
-    }
-
-    .pd-2 {
-      @media (min-width: 100px) and (max-width: 1023px) {
-        height: 15%;
-      }
-    }
-
-    .pd-3 {
-      @media (min-width: 100px) and (max-width: 1023px) {
-        height: 10%;
-      }
-    }
-
-    .pd-4 {
-      @media (min-width: 100px) and (max-width: 1023px) {
-        height: 20%;
-      }
-    }
-
-    .pd-5 {
-      @media (min-width: 100px) and (max-width: 1023px) {
-        height: 10%;
-=======
 
   @media (min-width: 100px) and (max-width: 1023px) {
     display: none;
@@ -603,72 +358,11 @@ header {
       @media (min-width: 100px) and (max-width: 1023px) {
         width: 100%;
         height: 25%;
->>>>>>> stickler
       }
     }
   }
 }
 
-<<<<<<< HEAD
-#aside-left {
-  left: 0;
-}
-
-#aside-right {
-  right: 0;
-}
-
-.product-images-container {
-  height: 33%;
-}
-
-.product-description-child-1 {
-  background-color: $color-almostwhite;
-  width: 35%;
-
-  .pd,
-  .cart-child {
-    border: $color-white 2px solid;
-  }
-
-  .pd {
-    @media (min-width: 100px) and (max-width: 1023px) {
-      padding: 0;
-    }
-  }
-
-  .add-cart-child-1 {
-    width: 10%;
-  }
-
-  .add-cart-child-2 {
-    width: 90%;
-  }
-
-  .pd,
-  .details-child {
-    padding: 10px;
-  }
-
-  #padding-lr-text {
-    padding: 0 10px;
-  }
-
-  .pd-1 {
-    display: none;
-  }
-
-  .pd-2 {
-    height: 25%;
-  }
-
-  .pd-3 {
-    height: 10%;
-  }
-
-  .pd-4 {
-    height: 50%;
-=======
   .product-description-child-1 {
     background-color: $color-almostwhite;
     width: 35%;
@@ -731,7 +425,7 @@ header {
       height: 10%;
     }
   }
-}
+
 
 #aside-left {
   left: 0;
@@ -749,7 +443,6 @@ header {
 .pd {
   @media (min-width: 100px) and (max-width: 1023px) {
     padding: 0;
->>>>>>> stickler
   }
 }
 
@@ -757,10 +450,6 @@ header {
   width: 10%;
 }
 
-<<<<<<< HEAD
-  .pd-5 {
-    height: 10%;
-=======
 .add-cart-child-2 {
   width: 90%;
 }
@@ -784,20 +473,9 @@ header {
     position: absolute;
     top: 15px;
     right: 30px;
->>>>>>> stickler
   }
 }
 
-<<<<<<< HEAD
-.product-description-child-2,
-.pd-1 {
-  width: 65%;
-  background: url(../images/generic-shoe2.jpg) no-repeat 100%;
-  background-size: cover;
-}
-
-.product-description-child-2 {
-=======
   .images-counter-container {
     height: 10%;
 
@@ -812,8 +490,3 @@ header {
     }
   }
 
->>>>>>> stickler
-  @media (min-width: 100px) and (max-width: 1023px) {
-    display: none;
-  }
-}

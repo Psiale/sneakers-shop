@@ -2,15 +2,8 @@
 
 module.exports = {
   "extends": "stylelint-config-recommended",
-<<<<<<< HEAD
-=======
-  "ignore-files": [
-    "!*.scss",
-    "**/.scss"
-  ],
->>>>>>> stickler
   "rules": {
-    ignoreAtRules: ['function', 'if'],
+    'at-rule-no-unknown': null,
     "at-rule-empty-line-before": [ "always", {
       except: [
         "blockless-after-same-name-blockless",

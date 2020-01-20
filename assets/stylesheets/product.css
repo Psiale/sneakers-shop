@@ -1,5 +1,6 @@
 /* color and font variables */
-/* Layout, style,size classes and mixins */html {
+/* Layout, style,size classes and mixins */
+html {
   height: 100%;
 }
 
@@ -46,6 +47,7 @@ a {
 }
 
 .box-title-lightblack {
+  color: black;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "IBM Plex Sans Condensed", sans-serif;
@@ -54,6 +56,7 @@ a {
 }
 
 .small-title {
+  color: black;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "IBM Plex Sans Condensed", sans-serif;
@@ -96,8 +99,8 @@ a {
 .column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .w-100 {
@@ -142,55 +145,55 @@ a {
 
 .justify-content-center {
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .justify-content-between {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .justify-content-around {
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .justify-content-evenly {
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .justify-content-start {
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .justify-content-end {
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .align-items-center {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .align-items-start {
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .align-items-end {
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 /* HTML element classes */
@@ -223,8 +226,6 @@ main {
   }
 }
 
-<<<<<<< HEAD
-=======
 .category-container {
   height: 20%;
 }
@@ -235,7 +236,6 @@ main {
   }
 }
 
->>>>>>> stickler
 .shoe-1,
 .shoe-2,
 .shoe-3,
@@ -245,7 +245,7 @@ main {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 100px) and (max-width: 1023px) {
@@ -308,7 +308,7 @@ main {
 
 .rotate {
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 header {
@@ -327,11 +327,9 @@ header {
     width: 100%;
     height: 30px;
   }
-
   header .menu-container {
     padding: 5px 10px 0 0;
   }
-
   header .menu-container .menu-icon {
     width: 14px;
     height: 14px;
@@ -351,8 +349,8 @@ header {
     height: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -372,8 +370,8 @@ header {
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -384,30 +382,30 @@ header {
   }
 }
 
-.main-container .product-description-child-1 {
+.product-description-child-1 {
   background-color: #f5f5f5;
   width: 35%;
 }
 
 @media (min-width: 100px) and (max-width: 1023px) {
-  .main-container .product-description-child-1 {
+  .product-description-child-1 {
     width: 75%;
     height: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .main-container .product-description-child-1 {
+  .product-description-child-1 {
     width: 100%;
   }
 }
 
-.main-container .product-description-child-1 .pd-1 {
+.product-description-child-1 .pd-1 {
   display: none;
 }
 
 @media (min-width: 100px) and (max-width: 1023px) {
-  .main-container .product-description-child-1 .pd-1 {
+  .product-description-child-1 .pd-1 {
     background: url(../images/generic-shoe2.jpg) no-repeat 100%;
     background-size: cover;
     display: initial;
@@ -415,45 +413,43 @@ header {
     width: 100%;
     height: 45%;
   }
-
-  .main-container .product-description-child-1 .pd-1 .product-cost {
+  .product-description-child-1 .pd-1 .product-cost {
     position: absolute;
     top: 10px;
     right: 15px;
   }
-
-  .main-container .product-description-child-1 .pd-1 .number-image-page {
+  .product-description-child-1 .pd-1 .number-image-page {
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: 45%;
   }
 }
 
-.main-container .product-description-child-1 .pd-2 {
+.product-description-child-1 .pd-2 {
   height: 25%;
 }
 
 @media (min-width: 100px) and (max-width: 1023px) {
-  .main-container .product-description-child-1 .pd-2 {
+  .product-description-child-1 .pd-2 {
     height: 15%;
   }
 }
 
-.main-container .product-description-child-1 .pd-3 {
+.product-description-child-1 .pd-3 {
   height: 10%;
 }
 
-.main-container .product-description-child-1 .pd-4 {
+.product-description-child-1 .pd-4 {
   height: 50%;
 }
 
 @media (min-width: 100px) and (max-width: 1023px) {
-  .main-container .product-description-child-1 .pd-4 {
+  .product-description-child-1 .pd-4 {
     height: 20%;
   }
 }
 
-.main-container .product-description-child-1 .pd-5 {
+.product-description-child-1 .pd-5 {
   height: 10%;
 }
 
@@ -465,24 +461,9 @@ header {
   right: 0;
 }
 
-<<<<<<< HEAD
-.product-images-container {
-  height: 33%;
-}
-
-.product-description-child-1 {
-  background-color: #f5f5f5;
-  width: 35%;
-}
-
-.product-description-child-1 .pd,
-.product-description-child-1 .cart-child {
-  border: #fff 2px solid;
-=======
 .pd,
 .cart-child {
   border: solid 2px white;
->>>>>>> stickler
 }
 
 @media (min-width: 100px) and (max-width: 1023px) {
@@ -521,23 +502,17 @@ header {
   right: 30px;
 }
 
-.product-description-child-2 .images-counter-container {
+.images-counter-container {
   height: 10%;
 }
 
-.product-description-child-2 .images-counter-container .counter-container-1 {
+.images-counter-container .counter-container-1 {
   width: 65%;
 }
 
-.product-description-child-2 .images-counter-container .counter-container-2 {
+.images-counter-container .counter-container-2 {
   background-color: white;
   width: 35%;
   margin-left: 20px;
-}
-
-@media (min-width: 100px) and (max-width: 1023px) {
-  .product-description-child-2 {
-    display: none;
-  }
 }
 /*# sourceMappingURL=product.css.map */
