@@ -94,11 +94,31 @@ a { text-decoration: none; }
     background-color: $color-almostwhite;
     z-index: 1;
   }
+<<<<<<< HEAD
 
   @media (min-width: 1024px) {
     background-color: #f5f5f5;
     z-index: 1;
   }
+=======
+
+  @media (min-width: 1024px) {
+    background-color: #f5f5f5;
+    z-index: 1;
+  }
+}
+
+.small-title {
+  @include title;
+  @include medium-font;
+
+  line-height: 30px;
+}
+
+.medium-title {
+  @include title;
+  @include big-font;
+>>>>>>> stickler
 }
 
 .big-title {
@@ -153,6 +173,13 @@ a { text-decoration: none; }
 
 .h-25 {
   height: 25%;
+<<<<<<< HEAD
+=======
+}
+
+.p-30 {
+  padding: 30px;
+>>>>>>> stickler
 }
 
 .padding-aside {
@@ -297,12 +324,77 @@ main {
   @include link;
 
   padding: 20px 0 0 10px;
+<<<<<<< HEAD
 
   span {
     @include title;
     @include smallest-font;
   }
 
+  @media (min-width: 100px) and (max-width: 1023px) {
+    padding: 0 0 0 10px;
+=======
+
+  span {
+    @include title;
+    @include smallest-font;
+>>>>>>> stickler
+  }
+}
+
+.menu-icon {
+  width: 12px;
+  height: 12px;
+}
+
+<<<<<<< HEAD
+#page {
+  @include link;
+  @include small-font;
+}
+
+.medium-link {
+  @include link;
+  @include medium-font;
+}
+
+.social-links {
+  @include link;
+  @include smallest-font;
+
+  margin-bottom: 10px;
+}
+
+.rounded-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: $color-white 50%;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+header {
+  display: none;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 30px;
+
+    .menu-container {
+      padding: 5px 10px 0 0;
+
+      .menu-icon {
+        width: 14px;
+        height: 14px;
+      }
+=======
   @media (min-width: 100px) and (max-width: 1023px) {
     padding: 0 0 0 10px;
   }
@@ -328,6 +420,76 @@ main {
   @include smallest-font;
 
   margin-bottom: 10px;
+}
+
+.m-child-1 {
+  @media (min-width: 100px) and (max-width: 1023px) {
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    height: 70%;
+  }
+}
+
+.m-child-2 {
+  @media (min-width: 100px) and (max-width: 1023px) {
+    width: 50%;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media (max-width: 767px) {
+    height: 30%;
+    width: 100%;
+  }
+
+  div {
+    @media (min-width: 100px) and (max-width: 1023px) {
+      height: 100%;
+>>>>>>> stickler
+    }
+  }
+}
+
+<<<<<<< HEAD
+.box-corner-tl {
+  padding: 12% 0 0 12%;
+}
+
+.box-corner-bl {
+  padding: 0 0 12% 12%;
+}
+
+.box-corner-br {
+  padding: 0 12% 12% 0;
+}
+
+=======
+.main-image {
+  background: url(../images/hero-image.jpg) no-repeat;
+  background-size: cover;
+  background-position: 69%;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main-small-image {
+  @include border-left;
+
+  background: url(../images/hero-image.jpeg) no-repeat;
+  background-size: cover;
+  background-position: 82%;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .rounded-icon {
@@ -375,16 +537,25 @@ header {
   padding: 0 12% 12% 0;
 }
 
+>>>>>>> stickler
 #aside-left,
 #aside-right {
   position: fixed;
   top: 0;
 }
+<<<<<<< HEAD
 
 #aside-left {
   left: 0;
 }
 
+=======
+
+#aside-left {
+  left: 0;
+}
+
+>>>>>>> stickler
 #aside-right {
   right: 0;
 }
