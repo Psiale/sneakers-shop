@@ -64,18 +64,6 @@ a {
   line-height: 30px;
 }
 
-@media (min-width: 100px) and (max-width: 1023px) {
-  #display-tablet-none {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  #display-desktop-none {
-    display: none;
-  }
-}
-
 .link-text {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 18px;
@@ -197,6 +185,18 @@ a {
 }
 
 /* HTML element classes */
+@media (min-width: 100px) and (max-width: 1023px) {
+  #display-tablet-none {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  #display-desktop-none {
+    display: none;
+  }
+}
+
 .kanji {
   font-size: 6px;
 }

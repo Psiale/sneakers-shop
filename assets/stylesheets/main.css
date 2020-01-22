@@ -8,19 +8,68 @@ html body {
   height: 100%;
 }
 
-@media screen and (min-width: 1241px) {
-  html body {
-    background-color: #f5f5f5;
-  }
-}
-
 * {
   padding: 0;
   margin: 0;
 }
 
-.small-title {
+a {
+  text-decoration: none;
+}
+
+.box-title {
+  background-color: #f5f5f5;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 14px;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .box-title {
+    background-color: unset;
+  }
+}
+
+@media (max-width: 364px) {
+  .box-title {
+    background-color: #f5f5f5;
+    z-index: 6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-title {
+    background-color: #f5f5f5;
+    z-index: 6;
+  }
+}
+
+.box-title-lightblack {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 14px;
   color: #313131;
+  z-index: 6;
+}
+
+@media (max-width: 364px) {
+  .box-title-lightblack {
+    background-color: #f5f5f5;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-title-lightblack {
+    background-color: #f5f5f5;
+  }
+}
+
+.small-title {
+  color: black;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "IBM Plex Sans Condensed", sans-serif;
@@ -29,7 +78,7 @@ html body {
 }
 
 .medium-title {
-  color: #313131;
+  color: black;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "IBM Plex Sans Condensed", sans-serif;
@@ -37,17 +86,18 @@ html body {
 }
 
 .big-title {
-  color: #313131;
+  color: black;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 40px;
+  padding-left: 10px;
 }
 
 .link-text {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 18px;
-  color: #313131;
+  color: black;
   text-decoration: none;
   margin-bottom: 30px;
 }
@@ -166,7 +216,6 @@ html body {
           align-items: flex-end;
 }
 
-/* HTML element classes */
 .kanji {
   font-size: 6px;
 }
@@ -199,13 +248,13 @@ main {
 }
 
 .icon-container {
-  color: #313131;
+  color: black;
   text-decoration: none;
   padding: 20px 0 0 10px;
 }
 
 .icon-container span {
-  color: #313131;
+  color: black;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "IBM Plex Sans Condensed", sans-serif;
@@ -218,21 +267,21 @@ main {
 }
 
 #page {
-  color: #313131;
+  color: black;
   text-decoration: none;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 14px;
 }
 
 .medium-link {
-  color: #313131;
+  color: black;
   text-decoration: none;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 18px;
 }
 
 .social-links {
-  color: #313131;
+  color: black;
   text-decoration: none;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 12px;
