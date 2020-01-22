@@ -189,7 +189,7 @@ html body {
 
 main {
   background-color: #fff;
-  width: 70%;
+  width: 100%;
 }
 
 @media (min-width: 100px) and (max-width: 1023px) {
@@ -335,5 +335,19 @@ header {
     width: 14px;
     height: 14px;
   }
+}
+
+#aside-left,
+#aside-right {
+  position: fixed;
+  top: 0;
+}
+
+#aside-left {
+  left: 0;
+}
+
+#aside-right {
+  right: 0;
 }
 /*# sourceMappingURL=main.css.map */

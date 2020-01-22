@@ -199,7 +199,7 @@ html {
 
 main {
   background-color: $color-white;
-  width: 70%;
+  width: 100%;
 
   @media (min-width: 100px) and (max-width: 1023px) {
     width: 100%;
@@ -325,4 +325,18 @@ header {
       }
     }
   }
+}
+
+#aside-left,
+#aside-right {
+  position: fixed;
+  top: 0;
+}
+
+#aside-left {
+  left: 0;
+}
+
+#aside-right {
+  right: 0;
 }
