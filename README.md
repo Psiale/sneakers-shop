@@ -8,7 +8,7 @@
 <br>
 
 # The purpouse of this webpage:
-To recreate the web design by Alex arigato and build a fully responsive webpage using Flexbox and SCSS. 
+To recreate the web design by Axel Arigato and build a fully responsive webpage using Flexbox and SCSS. 
 <br>
 
 # Built With
@@ -17,7 +17,7 @@ SCSS
 
 # Credits
 ### [Psiale](https://github.com/Psiale)
-### [Alex Arigato](https://www.behance.net/gallery/80392909/AXEL-ARIGATO-Website)
+### [Axel Arigato](https://www.behance.net/gallery/80392909/AXEL-ARIGATO-Website)
 
 <br>
 
