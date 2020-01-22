@@ -19,6 +19,8 @@ SCSS
 ### [Psiale](https://github.com/Psiale)
 ### [Alex Arigato](https://www.behance.net/gallery/80392909/AXEL-ARIGATO-Website)
 
+<br>
+
 # Live Version
 ### Main Page
 ![screenshot](assets/images/main-page-1.png)
