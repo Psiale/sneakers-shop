@@ -16,8 +16,8 @@ HTML5/CSS3
 SCSS
 
 # Credits
-[Psiale](https://github.com/Psiale)
-[Alex Arigato](https://www.behance.net/gallery/80392909/AXEL-ARIGATO-Website)
+### [Psiale](https://github.com/Psiale)
+### [Alex Arigato](https://www.behance.net/gallery/80392909/AXEL-ARIGATO-Website)
 
 # Live Version
 ### Main Page
