@@ -1,5 +1,6 @@
 /* color and font variables */
-/* Layout, style,size classes and mixins */html {
+/* Layout, style,size classes and mixins */
+html {
   height: 100%;
 }
 
@@ -34,36 +35,36 @@ a {
 @media (max-width: 364px) {
   .box-title {
     background-color: #f5f5f5;
-    z-index: 1;
+    z-index: 6;
   }
 }
 
 @media (min-width: 1024px) {
   .box-title {
     background-color: #f5f5f5;
-    z-index: 1;
+    z-index: 6;
   }
 }
 
 .box-title-lightblack {
+  color: black;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 14px;
   color: #313131;
+  z-index: 6;
 }
 
 @media (max-width: 364px) {
   .box-title-lightblack {
     background-color: #f5f5f5;
-    z-index: 1;
   }
 }
 
 @media (min-width: 1024px) {
   .box-title-lightblack {
     background-color: #f5f5f5;
-    z-index: 1;
   }
 }
 
@@ -110,20 +111,20 @@ a {
 .row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .wrap {
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .w-100 {
@@ -164,59 +165,59 @@ a {
 
 .justify-content-center {
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .justify-content-between {
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .justify-content-around {
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .justify-content-evenly {
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .justify-content-start {
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .justify-content-end {
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .align-items-center {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .align-items-start {
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .align-items-end {
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 /* HTML element classes */
-#kanji {
+.kanji {
   font-size: 6px;
 }
 
@@ -269,6 +270,7 @@ main {
 
 .catalogue-child {
   width: calc(33.33% - 8px);
+  position: relative;
   background-color: #f5f5f5;
   background-position: 100%;
   border: #fff 2px solid;
@@ -278,6 +280,44 @@ main {
   .catalogue-child {
     width: 100%;
     height: 50%;
+  }
+}
+
+.background-top-cover {
+  position: absolute;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.background-bottom-cover {
+  position: absolute;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+@media (min-width: 812px) {
+  .background-bottom-cover {
+    height: 50px;
+  }
+}
+
+@media (max-width: 427px) {
+  .background-bottom-cover {
+    height: 50px;
+  }
+}
+
+@media (min-width: 428px) and (max-width: 811px) {
+  .background-bottom-cover {
+    height: 30px;
   }
 }
 
@@ -436,7 +476,7 @@ main {
 
 .rotate {
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 header {
@@ -455,11 +495,9 @@ header {
     width: 100%;
     height: 30px;
   }
-
   header .menu-container {
     padding: 5px 10px 0 0;
   }
-
   header .menu-container .menu-icon {
     width: 14px;
     height: 14px;
@@ -474,8 +512,20 @@ header {
   padding: 0 0 12% 12%;
 }
 
+@media (max-width: 428px) {
+  .box-corner-bl {
+    padding: 0 0 28% 12%;
+  }
+}
+
 .box-corner-br {
   padding: 0 12% 12% 0;
+}
+
+@media (max-width: 428px) {
+  .box-corner-br {
+    padding: 0 12% 28% 0;
+  }
 }
 
 #aside-left,
