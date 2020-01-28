@@ -1,0 +1,296 @@
+@import '../stylesheets/generic';
+
+#display-tablet-none {
+  @media (min-width: 100px) and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+#display-desktop-none {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.kanji {
+  font-size: 6px;
+}
+
+.aside-menu {
+  position: sticky;
+  top: 0;
+  width: calc(15% - 16px);
+  background-color: white;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+main {
+  margin: 0 auto;
+  width: calc(70% - 60px);
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    width: 100%;
+  }
+}
+
+.category-container {
+  height: 20%;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.shoe-1,
+.shoe-2,
+.shoe-3,
+.shoe-4 {
+  border-top: $border-values;
+  border-bottom: $border-values;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    border-bottom: 0;
+    border-top: 0;
+    border-left: $border-values;
+    border-right: $border-values;
+  }
+}
+
+.icon-container {
+  @include link;
+
+  padding: 20px 0 0 10px;
+
+  span {
+    @include title;
+    @include smallest-font;
+  }
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    padding: 0 0 0 10px;
+  }
+}
+
+.menu-icon {
+  width: 12px;
+  height: 12px;
+}
+
+#page {
+  @include link;
+  @include small-font;
+}
+
+.social-links {
+  @include link;
+  @include smallest-font;
+
+  margin-bottom: 10px;
+}
+
+.rounded-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: $color-white 50%;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+header {
+  display: none;
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 30px;
+
+    .menu-container {
+      padding: 5px 10px 0 0;
+
+      .menu-icon {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+#aside-left,
+#aside-right {
+  position: fixed;
+  top: 0;
+}
+
+.main-container {
+  @media (min-width: 100px) and (max-width: 1023px) {
+    margin-top: 32px;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .product-images-container {
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    .product-images-container {
+      height: 33%;
+    }
+
+    @media (min-width: 100px) and (max-width: 1023px) {
+      width: 25%;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    .product-image-child {
+      @media (min-width: 100px) and (max-width: 1023px) {
+        width: 100%;
+        height: 25%;
+      }
+    }
+  }
+
+  .product-description-child-1 {
+    background-color: $color-almostwhite;
+    width: 35%;
+
+    @media (min-width: 100px) and (max-width: 1023px) {
+      width: 75%;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    .pd-1 {
+      display: none;
+
+      @media (min-width: 100px) and (max-width: 1023px) {
+        background: url(../images/generic-shoe2.jpg) no-repeat 100%;
+        background-size: cover;
+        display: initial;
+        position: relative;
+        width: 100%;
+        height: 45%;
+
+        .product-cost {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+        }
+
+        .number-image-page {
+          position: absolute;
+          bottom: 10px;
+          left: 45%;
+        }
+      }
+    }
+
+    .pd-2 {
+      height: 25%;
+
+      @media (min-width: 100px) and (max-width: 1023px) {
+        height: 15%;
+      }
+    }
+
+    .pd-3 {
+      height: 10%;
+    }
+
+    .pd-4 {
+      height: 50%;
+
+      @media (min-width: 100px) and (max-width: 1023px) {
+        height: 20%;
+      }
+    }
+
+    .pd-5 {
+      height: 10%;
+    }
+  }
+}
+
+#aside-left {
+  left: 0;
+}
+
+#aside-right {
+  right: 0;
+}
+
+.pd,
+.cart-child {
+  border: $border-values;
+}
+
+.pd {
+  @media (min-width: 100px) and (max-width: 1023px) {
+    padding: 0;
+  }
+}
+
+.add-cart-child-1 {
+  width: 10%;
+}
+
+.add-cart-child-2 {
+  width: 90%;
+}
+
+.pd,
+.details-child {
+  padding: 10px;
+}
+
+.padding-lr-text {
+  padding: 0 10px;
+}
+
+.product-description-child-2 {
+  position: relative;
+  width: 65%;
+  background: url(../images/generic-shoe2.jpg) no-repeat 100%;
+  background-size: cover;
+
+  .product-cost {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+
+  .images-counter-container {
+    height: 10%;
+
+    .counter-container-1 {
+      width: 65%;
+    }
+
+    .counter-container-2 {
+      background-color: white;
+      width: 35%;
+      margin-left: 20px;
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 1023px) {
+    display: none;
+  }
+}

@@ -1,0 +1,402 @@
+/* color and font variables */
+/* Layout, style,size classes and mixins */html {
+  height: 100%;
+}
+
+html body {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box-title {
+  background-color: #f5f5f5;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 14px;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .box-title {
+    background-color: unset;
+  }
+}
+
+@media (max-width: 364px) {
+  .box-title {
+    background-color: #f5f5f5;
+    z-index: 6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-title {
+    background-color: #f5f5f5;
+    z-index: 6;
+  }
+}
+
+.box-title-lightblack {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 14px;
+  color: #313131;
+  z-index: 6;
+}
+
+@media (max-width: 364px) {
+  .box-title-lightblack {
+    background-color: #f5f5f5;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-title-lightblack {
+    background-color: #f5f5f5;
+  }
+}
+
+.small-title {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.medium-title {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 24px;
+}
+
+.big-title {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+.link-text {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.padding-aside {
+  padding-right: 18%;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.justify-content-evenly {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.justify-content-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.justify-content-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.align-items-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.align-items-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.kanji {
+  font-size: 6px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.aside-menu {
+  width: 15%;
+  background-color: white;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .aside-menu {
+    display: none;
+  }
+}
+
+main {
+  background-color: #fff;
+  width: 100%;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  main {
+    width: 100%;
+  }
+}
+
+.icon-container {
+  color: black;
+  text-decoration: none;
+  padding: 20px 0 0 10px;
+}
+
+.icon-container span {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 12px;
+}
+
+.menu-icon {
+  width: 12px;
+  height: 12px;
+}
+
+#page {
+  color: black;
+  text-decoration: none;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 14px;
+}
+
+.medium-link {
+  color: black;
+  text-decoration: none;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 18px;
+}
+
+.social-links {
+  color: black;
+  text-decoration: none;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .m-child-1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .m-child-1 {
+    height: 70%;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .m-child-2 {
+    width: 50%;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .m-child-2 {
+    height: 30%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .m-child-2 div {
+    height: 100%;
+  }
+}
+
+.main-image {
+  background: url(../images/hero-image.jpg) no-repeat;
+  background-size: cover;
+  background-position: 69%;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .main-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main-small-image {
+  border-left: 2px solid white;
+  background: url(../images/hero-image.jpeg) no-repeat;
+  background-size: cover;
+  background-position: 82%;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .main-small-image {
+    display: none;
+  }
+}
+
+.rounded-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: #fff 50%;
+}
+
+.rotate {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+header {
+  display: none;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  header {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 30px;
+  }
+
+  header .menu-container {
+    padding: 5px 10px 0 0;
+  }
+
+  header .menu-container .menu-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+#aside-left,
+#aside-right {
+  position: fixed;
+  top: 0;
+}
+
+#aside-left {
+  left: 0;
+}
+
+#aside-right {
+  right: 0;
+}
+/*# sourceMappingURL=main.css.map */

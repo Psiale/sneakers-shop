@@ -1,0 +1,557 @@
+/* color and font variables */
+html {
+  height: 100%;
+}
+
+html body {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box-title {
+  background-color: #f5f5f5;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 14px;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .box-title {
+    background-color: unset;
+  }
+}
+
+@media (max-width: 364px) {
+  .box-title {
+    background-color: #f5f5f5;
+    z-index: 6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-title {
+    background-color: #f5f5f5;
+    z-index: 6;
+  }
+}
+
+.box-title-lightblack {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 14px;
+  color: #313131;
+  z-index: 6;
+}
+
+@media (max-width: 364px) {
+  .box-title-lightblack {
+    background-color: #f5f5f5;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-title-lightblack {
+    background-color: #f5f5f5;
+  }
+}
+
+.small-title {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.medium-title {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 24px;
+}
+
+.big-title {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+.link-text {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.padding-aside {
+  padding-right: 18%;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.justify-content-evenly {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.justify-content-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.justify-content-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.align-items-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.align-items-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  #display-tablet-none {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  #display-desktop-none {
+    display: none;
+  }
+}
+
+.kanji {
+  font-size: 6px;
+}
+
+.aside-menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: calc(15% - 16px);
+  background-color: white;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .aside-menu {
+    display: none;
+  }
+}
+
+main {
+  margin: 0 auto;
+  width: calc(70% - 60px);
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  main {
+    width: 100%;
+  }
+}
+
+.category-container {
+  height: 20%;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .category-container {
+    display: none;
+  }
+}
+
+.shoe-1,
+.shoe-2,
+.shoe-3,
+.shoe-4 {
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .shoe-1,
+  .shoe-2,
+  .shoe-3,
+  .shoe-4 {
+    border-bottom: 0;
+    border-top: 0;
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+  }
+}
+
+.icon-container {
+  color: black;
+  text-decoration: none;
+  padding: 20px 0 0 10px;
+}
+
+.icon-container span {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 12px;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .icon-container {
+    padding: 0 0 0 10px;
+  }
+}
+
+.menu-icon {
+  width: 12px;
+  height: 12px;
+}
+
+#page {
+  color: black;
+  text-decoration: none;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 14px;
+}
+
+.social-links {
+  color: black;
+  text-decoration: none;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.rounded-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: #fff 50%;
+}
+
+.rotate {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+header {
+  display: none;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  header {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 30px;
+  }
+
+  header .menu-container {
+    padding: 5px 10px 0 0;
+  }
+
+  header .menu-container .menu-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+#aside-left,
+#aside-right {
+  position: fixed;
+  top: 0;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .main-container {
+    margin-top: 32px;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-container .product-images-container {
+    display: none;
+  }
+}
+
+.main-container .product-images-container .product-images-container {
+  height: 33%;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .main-container .product-images-container {
+    width: 25%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .main-container .product-images-container .product-image-child {
+    width: 100%;
+    height: 25%;
+  }
+}
+
+.main-container .product-description-child-1 {
+  background-color: #f5f5f5;
+  width: 35%;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .main-container .product-description-child-1 {
+    width: 75%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container .product-description-child-1 {
+    width: 100%;
+  }
+}
+
+.main-container .product-description-child-1 .pd-1 {
+  display: none;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .main-container .product-description-child-1 .pd-1 {
+    background: url(../images/generic-shoe2.jpg) no-repeat 100%;
+    background-size: cover;
+    display: initial;
+    position: relative;
+    width: 100%;
+    height: 45%;
+  }
+
+  .main-container .product-description-child-1 .pd-1 .product-cost {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+
+  .main-container .product-description-child-1 .pd-1 .number-image-page {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+  }
+}
+
+.main-container .product-description-child-1 .pd-2 {
+  height: 25%;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .main-container .product-description-child-1 .pd-2 {
+    height: 15%;
+  }
+}
+
+.main-container .product-description-child-1 .pd-3 {
+  height: 10%;
+}
+
+.main-container .product-description-child-1 .pd-4 {
+  height: 50%;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .main-container .product-description-child-1 .pd-4 {
+    height: 20%;
+  }
+}
+
+.main-container .product-description-child-1 .pd-5 {
+  height: 10%;
+}
+
+#aside-left {
+  left: 0;
+}
+
+#aside-right {
+  right: 0;
+}
+
+.pd,
+.cart-child {
+  border: solid 2px white;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .pd {
+    padding: 0;
+  }
+}
+
+.add-cart-child-1 {
+  width: 10%;
+}
+
+.add-cart-child-2 {
+  width: 90%;
+}
+
+.pd,
+.details-child {
+  padding: 10px;
+}
+
+.padding-lr-text {
+  padding: 0 10px;
+}
+
+.product-description-child-2 {
+  position: relative;
+  width: 65%;
+  background: url(../images/generic-shoe2.jpg) no-repeat 100%;
+  background-size: cover;
+}
+
+.product-description-child-2 .product-cost {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+.product-description-child-2 .images-counter-container {
+  height: 10%;
+}
+
+.product-description-child-2 .images-counter-container .counter-container-1 {
+  width: 65%;
+}
+
+.product-description-child-2 .images-counter-container .counter-container-2 {
+  background-color: white;
+  width: 35%;
+  margin-left: 20px;
+}
+
+@media (min-width: 100px) and (max-width: 1023px) {
+  .product-description-child-2 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=product.css.map */
