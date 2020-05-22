@@ -16,12 +16,14 @@ HTML5/CSS3
 SCSS
 
 # Credits
-### [Psiale](https://github.com/Psiale)
+### [Psiale](https://www.linkedin.com/in/alexis-sanchez-dev/)
 ### [Axel Arigato](https://www.behance.net/gallery/80392909/AXEL-ARIGATO-Website)
 
 <br>
 
 # Live Version
+[Live Demo](https://rawcdn.githack.com/Psiale/sneakers-shop/42827bf1d207e2bddbcf6225383811ef75e9e283/pages/main.html#)
+
 ### Main Page
 ![screenshot](assets/images/main-page-1.png)
 ![screenshot](assets/images/main-page-2.png)
@@ -36,6 +38,5 @@ SCSS
 ![screenshot](assets/images/product-page-1.png)
 ![screenshot](assets/images/product-page-2.png)
 ![screenshot](assets/images/product-page-3.png)
-[Live Demo](https://rawcdn.githack.com/Psiale/sneakers-shop/42827bf1d207e2bddbcf6225383811ef75e9e283/pages/main.html#)
  
 
