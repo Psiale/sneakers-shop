@@ -1,13 +1,13 @@
 # Sneakers-shop
 ### A recreation of a sneakers shop web design.
 
-* [The purpouse of this webpage](#The-purpouse-of-this-webpage)
+* [The purpose of this webpage](#The-purpouse-of-this-webpage)
 * [Built With](#built-with)
 * [Credits](#contact)
 * [Live Demo](#Live-Version)
 <br>
 
-# The purpouse of this webpage:
+# The purpose of this webpage:
 To recreate the web design by Axel Arigato and build a fully responsive webpage using Flexbox and SCSS. 
 <br>
 
